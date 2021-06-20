@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fake_user_agent
+Version: 0.0.4
+Summary: Fake useragent randomly generates a useragent for fetching a webpage without a browser.
+Home-page: https://github.com/KateWang2016/fake_user_agent
+Keywords: python, useragent, http, header
+Author: Kate Wang
+Author-email: kate.wang2018@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: lxml
+Requires-Dist: aiohttp
+
+Randomly generate a fake useragent.
+
