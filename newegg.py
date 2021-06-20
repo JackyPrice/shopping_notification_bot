@@ -12,12 +12,13 @@ opts = Options()
 opts.add_argument("user-agent="+useragent.random)
 driver = webdriver.Chrome(options=opts)
 
-# gets specific filter on store for new egg for 1200W+ corsair psus
-# driver.get("https://www.newegg.com/global/uk-en/p/pl?N=101582752%20600479300%2050001459%20600479299&cm_sp=Cat_Power-Supplies_3-_-VisNav-_-titanium-1200W-above-_3")
 
 # test on gpu in stock
 while True:
-    driver.get("https://www.newegg.com/global/uk-en/p/pl?N=101582767%20601331379%20601296707")
+    # gets specific filter on store for new egg for 1200W+ corsair psus (currently, only the HX1200)
+    driver.get("https://www.newegg.com/global/uk-en/p/pl?N=101582752%20600479300%2050001459%20600479299&cm_sp=Cat_Power-Supplies_3-_-VisNav-_-titanium-1200W-above-_3")
+    # test url
+    # driver.get("https://www.newegg.com/global/uk-en/p/pl?N=101582767%20601331379%20601296707")
 
     # wait for website to load
     time.sleep(5)
